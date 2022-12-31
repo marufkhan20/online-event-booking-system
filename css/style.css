@@ -25,3 +25,8 @@ body {
   width: 50%;
   margin: auto;
 }
+
+/* events area start */
+.events-area .event-date {
+  background-color: #fafdf9;
+}

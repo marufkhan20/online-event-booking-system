@@ -11,7 +11,9 @@
   </head>
   <body>
     <!-- navigation area start -->
-    <nav class="navigation-area py-10 bg-white fixed left-0 right-0 top-0">
+    <nav
+      class="navigation-area py-10 bg-white fixed left-0 right-0 top-0 z-index-10"
+    >
       <div class="container">
         <div class="flex items-center justify-between gap-20">
           <div>
@@ -92,5 +94,567 @@
       </div>
     </header>
     <!-- header area end -->
+
+    <!-- events area start -->
+    <section class="events-area bg-secondary py-70">
+      <div class="container">
+        <h2 class="text-3xl">Explore Events</h2>
+
+        <!-- time nav area start -->
+        <div class="my-36">
+          <ul class="flex items-center gap-5">
+            <li
+              class="border border-gray bg-gray py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">All</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">Today</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">Tomorrow</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">This Week</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">This Weekend</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">Next Week</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">Next Weekend</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">This Month</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">Next Month</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">This Year</a>
+            </li>
+            <li
+              class="border border-gray bg-white py-10 px-20 rounded-xl bg-gray-hover cursor-pointer transition block text-xs"
+            >
+              <a href="#">Next Year</a>
+            </li>
+          </ul>
+        </div>
+        <!-- time nav area end -->
+
+        <!-- category area start -->
+        <div>
+          <ul class="flex items-center gap-5">
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm text-primary"
+            >
+              <a class="text-primary" href="#">All</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Arts</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Business</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Concert</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Workshops</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Coaching and Consulting</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Health and Wellbing</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Volunteer</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Sports</a>
+            </li>
+            <li
+              class="bg-white py-10 px-20 rounded-sm font-medium cursor-pointer transition block text-sm"
+            >
+              <a href="#">Free</a>
+            </li>
+          </ul>
+        </div>
+        <!-- category area end -->
+
+        <!-- events wrapper start -->
+        <div class="grid grid-cols-4 gap-15 mt-40">
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190 relative">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-2.jpg"
+                alt="event"
+              />
+              <div
+                class="absolute top-20 right-20 h-40 w-40 rounded-full flex items-center justify-center bg-primary cursor-pointer"
+              >
+                <img
+                  class="w-15 img-white"
+                  src="/img/icons/bookmark-white.png"
+                  alt="bookmark white"
+                />
+              </div>
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-2.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-3.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-5.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-2.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-3.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-4.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-sm border border-gray overflow-hidden">
+            <div class="overflow-hidden h-190">
+              <img
+                class="w-full h-full transition-8 scale-125-hover"
+                src="/img/events/big-5.jpg"
+                alt="event"
+              />
+            </div>
+            <div class="px-15">
+              <h3 class="text-base font-semibold mt-20 mb-40">
+                <a href="#" class="text-dark">A New Way of Life</a>
+              </h3>
+              <div class="flex items-center justify-between mb-25">
+                <h4 class="font-medium text-sm">AUD $100.00*</h4>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-50"
+                    src="/img/icons/ticket.png"
+                    alt="ticket"
+                  />
+                  <span class="text-sm text-body">6 Remaining</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between py-8 event-date">
+                <div class="flex items-center gap-15">
+                  <div class="flex items-center gap-5">
+                    <img
+                      class="w-15 opacity-60"
+                      src="/img/icons/event.png"
+                      alt="calender"
+                    />
+                    <span>15 Apr</span>
+                  </div>
+                  <span> Fri, 3.45 PM</span>
+                </div>
+                <div class="flex items-center gap-5">
+                  <img
+                    class="w-15 opacity-70"
+                    src="/img/icons/time.png"
+                    alt="time"
+                  />
+                  <span>1h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- events wrapper end -->
+
+        <div class="text-center mt-40">
+          <a
+            class="text-white text-base bg-primary bg-primary-hover transition py-15 inline-block px-30 rounded-sm"
+            href="#"
+            >Browse All</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- events area end -->
+
+    <!-- workflow area start -->
+    <section class="workflow-area py-70">
+      <div class="container">
+        <div class="section-title">
+          <h2>Host Engaging Online and Venue Events with Barren</h2>
+          <p>
+            Organise venue events and host online events with unlimited
+            possibilities using our built-in virtual event platform. Build a
+            unique event experience for <br />you and your attendees.
+          </p>
+        </div>
+
+        <!-- workflow wrapper start -->
+        <div class="grid grid-cols-3 gap-15 mt-40">
+          <div class="px-25 py-30 border rounded-sm">
+            <img src="/img/workflow/venue-events.png" alt="webiner" />
+            <h4 class="text-lg mt-20 mb-20">Webinar</h4>
+            <p class="text-sm leading-26">
+              Webinars tend to be one-way events. Barren helps to make them more
+              engaging.
+            </p>
+          </div>
+          <div class="px-25 py-30 border rounded-sm">
+            <img src="/img/workflow/online-class.png" alt="online" />
+            <h4 class="text-lg mt-20 mb-20">Webinar</h4>
+            <p class="text-sm leading-26">
+              Webinars tend to be one-way events. Barren helps to make them more
+              engaging.
+            </p>
+          </div>
+          <div class="px-25 py-30 border rounded-sm">
+            <img src="/img/workflow/talk-show.png" alt="talk show" />
+            <h4 class="text-lg mt-20 mb-20">Webinar</h4>
+            <p class="text-sm leading-26">
+              Webinars tend to be one-way events. Barren helps to make them more
+              engaging.
+            </p>
+          </div>
+        </div>
+        <!-- workflow wrapper end -->
+      </div>
+    </section>
+    <!-- workflow area end -->
   </body>
 </html>
