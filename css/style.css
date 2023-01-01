@@ -30,3 +30,8 @@ body {
 .events-area .event-date {
   background-color: #fafdf9;
 }
+
+/* events step area start */
+.events-steps-area .step-button:hover {
+  background-color: #e8f7f7;
+}

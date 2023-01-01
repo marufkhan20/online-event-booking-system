@@ -124,6 +124,11 @@ h6 {
   gap: 50px;
 }
 
+/* gap top bottom */
+.gap-y-60 {
+  row-gap: 60px;
+}
+
 /* text align */
 .text-left {
   text-align: left;
@@ -163,6 +168,12 @@ h6 {
 .w-50 {
   width: 50px;
 }
+.w-100 {
+  width: 100px;
+}
+.w-150 {
+  width: 150px;
+}
 .w-full {
   width: 100%;
 }
@@ -195,6 +206,9 @@ h6 {
 .h-50 {
   height: 50px;
 }
+.h-150 {
+  height: 150px;
+}
 .h-190 {
   height: 190px;
 }
@@ -208,6 +222,9 @@ h6 {
 }
 
 /* border */
+.border-none {
+  border: none;
+}
 .border {
   border: 1px solid #efefef;
 }
@@ -216,6 +233,19 @@ h6 {
 }
 .border-gray {
   border-color: var(--gray-color);
+}
+
+/* border top */
+.border-t {
+  border-top: 1px solid #efefef;
+}
+.border-t-2 {
+  border-top: 2px solid #efefef;
+}
+
+/* border bottom */
+.border-b {
+  border-bottom: 1px solid #efefef;
 }
 
 /* border radius */
@@ -251,6 +281,14 @@ h6 {
 .p-6 {
   padding: 6px;
 }
+.p-34 {
+  padding: 34px;
+}
+
+/* padding top */
+.pt-40 {
+  padding-top: 40px;
+}
 
 /* padding top bottom */
 .py-6 {
@@ -272,6 +310,10 @@ h6 {
 .py-18 {
   padding-top: 18px;
   padding-bottom: 18px;
+}
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .py-30 {
   padding-top: 30px;
@@ -318,14 +360,32 @@ h6 {
 .mt-10 {
   margin-top: 10px;
 }
+.mt-15 {
+  margin-top: 15px;
+}
 .mt-20 {
   margin-top: 20px;
+}
+.mt-36 {
+  margin-top: 36px;
 }
 .mt-40 {
   margin-top: 40px;
 }
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
 
 /* margin bottom */
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -361,6 +421,9 @@ h6 {
 .text-body {
   color: var(--body-color);
 }
+.text-gray {
+  color: var(--gray-color);
+}
 
 /* font size */
 .text-xs {
@@ -379,13 +442,13 @@ h6 {
   font-size: 18px;
   line-height: 22px;
 }
+.text-xl {
+  font-size: 22px;
+  line-height: 32px;
+}
 .text-3xl {
   font-size: 32px;
   line-height: 48px;
-}
-.text-xl {
-  font-size: 18px;
-  line-height: 32px;
 }
 
 /* font weight */
@@ -529,4 +592,7 @@ h6 {
 /* line height */
 .leading-26 {
   line-height: 26px;
+}
+.leading-30 {
+  line-height: 30px;
 }
