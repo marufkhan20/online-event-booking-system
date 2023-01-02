@@ -62,6 +62,9 @@ h6 {
 .items-center {
   align-items: center;
 }
+.flex-col {
+  flex-direction: column;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -231,9 +234,6 @@ h6 {
 .border-2 {
   border: 2px solid #efefef;
 }
-.border-gray {
-  border-color: var(--gray-color);
-}
 
 /* border top */
 .border-t {
@@ -246,6 +246,14 @@ h6 {
 /* border bottom */
 .border-b {
   border-bottom: 1px solid #efefef;
+}
+
+/* border color */
+.border-body {
+  border-color: var(--body-color);
+}
+.border-gray {
+  border-color: var(--gray-color);
 }
 
 /* border radius */
@@ -318,6 +326,10 @@ h6 {
 .py-30 {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.py-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .py-70 {
   padding-top: 70px;
@@ -415,6 +427,9 @@ h6 {
 .text-primary {
   color: var(--primary-color);
 }
+.text-primary-hover:hover {
+  color: var(--primary-hover-color);
+}
 .text-secondary {
   color: var(--secondary-color);
 }
@@ -489,6 +504,9 @@ h6 {
 }
 .bg-gray-hover:hover {
   background-color: var(--gray-color);
+}
+.bg-footer {
+  background-color: #1c2131;
 }
 
 /* position  */

@@ -35,3 +35,13 @@ body {
 .events-steps-area .step-button:hover {
   background-color: #e8f7f7;
 }
+
+/* footer area start */
+.footer-area .footer-info ul li:hover {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.footer-area .footer-info ul li:hover img {
+  opacity: 1;
+}
