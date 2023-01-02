@@ -45,3 +45,14 @@ body {
 .footer-area .footer-info ul li:hover img {
   opacity: 1;
 }
+
+/* breadcrumb area start */
+.breadcrumb-area {
+  background: linear-gradient(to right, #d2f5ee, #d0eef8);
+  margin-top: 65px;
+}
+
+/* create event start */
+.create-event .event-icon {
+  background-color: #e8f7f7;
+}

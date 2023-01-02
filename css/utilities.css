@@ -180,6 +180,9 @@ h6 {
 .w-full {
   width: 100%;
 }
+.w-50-p {
+  width: 50%;
+}
 
 /* height */
 .h-10 {
@@ -288,6 +291,9 @@ h6 {
 }
 .p-6 {
   padding: 6px;
+}
+.p-30 {
+  padding: 30px;
 }
 .p-34 {
   padding: 34px;
@@ -407,6 +413,9 @@ h6 {
 .mb-30 {
   margin-bottom: 30px;
 }
+.mb-35 {
+  margin-bottom: 35px;
+}
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -415,6 +424,12 @@ h6 {
 .my-36 {
   margin-top: 36px;
   margin-bottom: 36px;
+}
+
+/* margin left right */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* text color */
@@ -448,6 +463,9 @@ h6 {
 .text-sm {
   font-size: 14px;
   line-height: 21px;
+}
+.text-regular {
+  font-size: 15px;
 }
 .text-base {
   font-size: 16px;
