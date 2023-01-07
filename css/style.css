@@ -114,3 +114,8 @@ body {
   top: 3px;
   background-color: #fff;
 }
+
+/* create veneu event */
+.ticket-box {
+  background-color: #f5edfc;
+}

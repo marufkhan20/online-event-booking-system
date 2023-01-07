@@ -351,6 +351,9 @@ h6 {
 }
 
 /* padding bottom */
+.pb-25 {
+  padding-bottom: 25px;
+}
 .pb-60 {
   padding-bottom: 60px;
 }
@@ -476,6 +479,21 @@ h6 {
 }
 
 /* margin bottom */
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-6 {
+  margin-bottom: 6px;
+}
+.mb-7 {
+  margin-bottom: 7px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-9 {
+  margin-bottom: 9px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }

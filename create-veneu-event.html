@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barren - Simple Online Event Ticketing System</title>
+    <link rel="stylesheet" href="css/veriable.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navigation area start -->
+    <nav
+      class="navigation-area py-10 bg-white fixed left-0 right-0 top-0 z-index-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between gap-20">
+          <div>
+            <a href="/"><img class="h-40" src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="flex items-center gap-25">
+            <ul class="flex items-center gap-30">
+              <li>
+                <a class="text-dark transition" href="#">Home</a>
+              </li>
+              <li>
+                <a class="text-dark transition" href="#">Explore Events</a>
+              </li>
+              <li>
+                <a class="text-dark transition" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="text-dark transition" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="text-dark transition" href="#">Help</a>
+              </li>
+              <li>
+                <a class="text-dark transition" href="#">Pages</a>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="flex items-center gap-10 create-event block py-10 px-15 rounded-xs text-white bg-primary ml-20 transition bg-primary-hover"
+            >
+              <img
+                class="w-15 img-white"
+                src="/img/icons/event.png"
+                alt="event"
+              />
+              <span>Create Event</span>
+            </a>
+            <div>
+              <img
+                class="w-40 h-40 cursor-pointer border-2 p-2 rounded-full"
+                src="/img/users/user-1.png"
+                alt="user"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation area end -->
+
+    <!-- breadcrumb area start -->
+    <header class="breadcrumb-area py-30">
+      <div class="container">
+        <ul class="flex items-center gap-10 text-regular">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>/</li>
+          <li>
+            <a href="create.html">Create</a>
+          </li>
+          <li>/</li>
+          <li>Create Online Event</li>
+        </ul>
+      </div>
+    </header>
+    <!-- breadcrumb area end -->
+
+    <!-- create event area start -->
+    <section class="create-event py-60 bg-secondary">
+      <div class="container">
+        <h2 class="text-center text-3xl mt-10 mb-35">Create Online Event</h2>
+      </div>
+    </section>
+    <!-- create event area end -->
+
+    <!-- event form start -->
+    <section class="event-form bg-secondary pt-40 pb-60">
+      <div class="container">
+        <!-- details area start -->
+        <div class="hidden">
+          <div class="w-60-p mx-auto bg-white rounded-sm border">
+            <div class="flex items-center gap-10 p-20 border-b">
+              <img class="w-20" src="/img/icons/info.png" alt="info" />
+              <h3 class="text-lg">Details</h3>
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">
+                Give your event a name.*
+              </h4>
+              <p class="mb-15">
+                See how your name appears on the event page and a list of all
+                places where your event name will be used. Learn more
+              </p>
+              <input
+                class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                type="text"
+                placeholder="Enter event name here"
+              />
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">
+                Choose a category for your event.*
+              </h4>
+              <p class="mb-15">
+                Choosing relevant categories helps to improve the
+                discoverability of your event. Learn more
+              </p>
+              <select
+                class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                type="text"
+              >
+                <option>Select category</option>
+                <option>Arts</option>
+                <option>Business</option>
+                <option>Coaching and Consulting</option>
+                <option>Community and Culture</option>
+              </select>
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">When is your event?*</h4>
+              <p class="mb-35">
+                Tell your attendees when your event starts so they can get ready
+                to attend.
+              </p>
+              <div class="flex items-center gap-5">
+                <div class="w-50-p">
+                  <label class="font-medium text-regular block text-dark mb-10"
+                    >Event Date.*</label
+                  >
+                  <input
+                    class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                    type="date"
+                  />
+                </div>
+                <div class="flex items-center gap-5 w-50-p">
+                  <div>
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >Time</label
+                    >
+                    <select
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                    >
+                      <option>Select category</option>
+                      <option>Arts</option>
+                      <option>Business</option>
+                      <option>Coaching and Consulting</option>
+                      <option>Community and Culture</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >Duration</label
+                    >
+                    <select
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                    >
+                      <option>Select category</option>
+                      <option>Arts</option>
+                      <option>Business</option>
+                      <option>Coaching and Consulting</option>
+                      <option>Community and Culture</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">
+                Add a few images to your event banner.
+              </h4>
+              <p class="mb-15">
+                Upload colorful and vibrant images as the banner for your event!
+                See how beautiful images help your event details page. Learn
+                more
+              </p>
+              <div class="overflow-hidden relative">
+                <img
+                  height="220"
+                  class="w-full border-2 border-dashed"
+                  src="/img/custom-img.jpg"
+                  alt="custom image"
+                />
+                <div class="absolute top-15 right-15">
+                  <label
+                    class="block py-15 px-25 bg-white text-dark font-medium cursor-pointer bg-primary-hover text-white-hover transition rounded-xs"
+                    for="image"
+                    >Change Image</label
+                  >
+                  <input class="hidden" id="image" type="file" />
+                </div>
+              </div>
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">
+                Please describe your event.
+              </h4>
+              <p class="mb-15">
+                Write a few words below to describe your event and provide any
+                extra information such as schedules, itinerary or any special
+                instructions required to attend your event.
+              </p>
+              <textarea
+                class="block w-full py-15 px-10 rounded-xs border text-body outline-none"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <div class="py-25 mx-20">
+              <h4 class="font-medium text-base mb-15">
+                Where is your event taking place? *
+              </h4>
+              <p class="mb-30">
+                Add a venue to your event to tell your attendees where to join
+                the event.
+              </p>
+
+              <!-- map area start -->
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58766.07337100518!2d91.21333329513298!3d22.991455016794152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbn!2sbd!4v1673098202251!5m2!1sbn!2sbd"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- map area end -->
+
+              <div class="mt-40">
+                <div class="mb-30">
+                  <label class="font-medium text-regular block text-dark mb-10"
+                    >Venue*</label
+                  >
+                  <input
+                    class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                    type="text"
+                  />
+                </div>
+
+                <div class="flex items-center gap-20 mb-30">
+                  <div class="w-full">
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >Address line 1*
+                    </label>
+                    <input
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                    />
+                  </div>
+
+                  <div class="w-full">
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >Address line 2*
+                    </label>
+                    <input
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-20 mb-30">
+                  <div class="w-full">
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >Country*
+                    </label>
+                    <input
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                      value="Bangladesh"
+                    />
+                  </div>
+
+                  <div class="w-full">
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >State*
+                    </label>
+                    <input
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                      value="Chattogram"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-20">
+                  <div class="w-full">
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >City/Suburb*
+                    </label>
+                    <input
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                      value="Noakhali"
+                    />
+                  </div>
+
+                  <div class="w-full">
+                    <label
+                      class="font-medium text-regular block text-dark mb-10"
+                      >Zip/Post Code*
+                    </label>
+                    <input
+                      class="block w-full py-15 px-10 bg-secondary border text-body outline-none"
+                      type="text"
+                      value="3860"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- button area start -->
+          <div class="text-center mt-40">
+            <div class="inline-block">
+              <a
+                href="#"
+                class="flex items-center gap-10 create-event py-10 px-50 rounded-xs text-white bg-primary transition bg-primary-hover"
+              >
+                <span>Next</span>
+              </a>
+            </div>
+          </div>
+          <!-- button area end -->
+        </div>
+        <!-- details area end -->
+
+        <!-- tickets area start -->
+        <div class="hidden">
+          <div class="w-60-p mx-auto bg-white rounded-sm border">
+            <div class="flex items-center gap-10 p-20 border-b">
+              <img class="w-20" src="/img/icons/ticket.png" alt="ticket" />
+              <h3 class="text-lg">Tickets</h3>
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">Let's create tickets!</h4>
+              <p class="mb-15">
+                Add the ticket price and the number of your attendees. For free
+                events, keep the price at $0.
+              </p>
+            </div>
+
+            <div class="py-25 mx-20 flex justify-between">
+              <h3>Tickets (3)</h3>
+              <a
+                href="#"
+                class="flex items-center gap-10 create-event py-10 px-25 rounded-xs text-white bg-primary transition bg-primary-hover"
+              >
+                <span>Add Tickets</span>
+                <img
+                  class="w-10 img-white"
+                  src="/img/icons/down-arrow.png"
+                  alt="down arrow"
+                />
+              </a>
+            </div>
+
+            <div class="py-25 mx-20">
+              <div class="border px-20 py-25">
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-15">
+                    <div
+                      class="w-50 h-50 rounded-full ticket-box flex items-center justify-center"
+                    >
+                      <img
+                        class="w-25"
+                        src="/img/icons/ticket-color.png"
+                        alt="ticket"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="text-base font-medium mb-8">
+                        New Small - $10.00
+                      </h4>
+                      <span>May 3, 2022 </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-15">
+                    <img src="/img/icons/perchantage.png" alt="perchantage" />
+                    <label class="toggler-wrapper style-1">
+                      <input type="checkbox" />
+                      <div class="toggler-slider">
+                        <div class="toggler-knob"></div>
+                      </div>
+                    </label>
+                    <div
+                      class="border-2 w-35 h-35 rounded-sm flex items-center justify-center cursor-pointer"
+                    >
+                      <img class="w-15" src="/img/icons/dots.png" alt="dots" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border px-20 py-25">
+                <div class="flex items-center justify-between">
+                  <div class="flex gap-10">
+                    <div
+                      class="h-35 w-35 rounded-full bg-secondary flex items-center justify-center"
+                    >
+                      <img
+                        class="w-15 opacity-60"
+                        src="/img/icons/ticket.png"
+                        alt="ticket"
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xs">Total tickets </span>
+                      <h5 class="text-xs font-medium">20</h5>
+                    </div>
+                  </div>
+                  <div class="flex gap-10">
+                    <div
+                      class="h-35 w-35 rounded-full bg-secondary flex items-center justify-center"
+                    >
+                      <img
+                        class="w-15 opacity-60"
+                        src="/img/icons/group-users.png"
+                        alt="group-users"
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xs">Ticket limit per customer </span>
+                      <h5 class="text-xs font-medium">2</h5>
+                    </div>
+                  </div>
+                  <div class="flex gap-10">
+                    <div
+                      class="h-35 w-35 rounded-full bg-secondary flex items-center justify-center"
+                    >
+                      <img
+                        class="w-15 opacity-60"
+                        src="/img/icons/cart.png"
+                        alt="cart"
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xs">Discount </span>
+                      <h5 class="text-xs font-medium">5%</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pb-25 pt-10 mx-20">
+              <div class="border px-20 py-25">
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-15">
+                    <div
+                      class="w-50 h-50 rounded-full ticket-box flex items-center justify-center"
+                    >
+                      <img
+                        class="w-25"
+                        src="/img/icons/ticket-color.png"
+                        alt="ticket"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="text-base font-medium mb-8">
+                        New Small - $10.00
+                      </h4>
+                      <span>May 3, 2022 </span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-15">
+                    <img src="/img/icons/perchantage.png" alt="perchantage" />
+                    <label class="toggler-wrapper style-1">
+                      <input type="checkbox" />
+                      <div class="toggler-slider">
+                        <div class="toggler-knob"></div>
+                      </div>
+                    </label>
+                    <div
+                      class="border-2 w-35 h-35 rounded-sm flex items-center justify-center cursor-pointer"
+                    >
+                      <img class="w-15" src="/img/icons/dots.png" alt="dots" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border px-20 py-25">
+                <div class="flex items-center justify-between">
+                  <div class="flex gap-10">
+                    <div
+                      class="h-35 w-35 rounded-full bg-secondary flex items-center justify-center"
+                    >
+                      <img
+                        class="w-15 opacity-60"
+                        src="/img/icons/ticket.png"
+                        alt="ticket"
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xs">Total tickets </span>
+                      <h5 class="text-xs font-medium">20</h5>
+                    </div>
+                  </div>
+                  <div class="flex gap-10">
+                    <div
+                      class="h-35 w-35 rounded-full bg-secondary flex items-center justify-center"
+                    >
+                      <img
+                        class="w-15 opacity-60"
+                        src="/img/icons/group-users.png"
+                        alt="group-users"
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xs">Ticket limit per customer </span>
+                      <h5 class="text-xs font-medium">2</h5>
+                    </div>
+                  </div>
+                  <div class="flex gap-10">
+                    <div
+                      class="h-35 w-35 rounded-full bg-secondary flex items-center justify-center"
+                    >
+                      <img
+                        class="w-15 opacity-60"
+                        src="/img/icons/cart.png"
+                        alt="cart"
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xs">Discount </span>
+                      <h5 class="text-xs font-medium">5%</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-40">
+            <div class="inline-block">
+              <a
+                href="#"
+                class="flex items-center gap-10 create-event py-10 px-50 rounded-xs text-white bg-primary transition bg-primary-hover"
+              >
+                <span>Previous</span>
+              </a>
+            </div>
+            <div class="inline-block">
+              <a
+                href="#"
+                class="flex items-center gap-10 create-event py-10 px-50 rounded-xs text-white bg-primary transition bg-primary-hover"
+              >
+                <span>Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- tickets area end -->
+
+        <!-- settings area start -->
+        <div class="">
+          <div class="w-60-p mx-auto bg-white rounded-sm border">
+            <div class="flex items-center gap-10 p-20 border-b">
+              <img class="w-20" src="/img/icons/settings.png" alt="settings" />
+              <h3 class="text-lg">Setting</h3>
+            </div>
+
+            <div class="py-25 mx-20 border-b">
+              <h4 class="font-medium text-base mb-15">
+                Let's configure a few additional options for your event!
+              </h4>
+              <p class="mb-15">
+                Change the following settings based on your preferences to
+                customise your event accordingly.
+              </p>
+
+              <div class="flex gap-10 mt-40">
+                <!-- Toggle Button Style 1 -->
+                <label class="toggler-wrapper style-1">
+                  <input type="checkbox" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div>
+                  <h4 class="mb-15">
+                    I want the bookings to start immediately.
+                  </h4>
+                  <p>
+                    Disable this option if you want to start your booking from a
+                    specific date and time.
+                  </p>
+                </div>
+                <!-- End Toggle Button Style 1 -->
+              </div>
+            </div>
+
+            <div class="py-35 mx-20 border-b">
+              <div class="flex gap-10">
+                <!-- Toggle Button Style 1 -->
+                <label class="toggler-wrapper style-1">
+                  <input type="checkbox" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div>
+                  <h4 class="mb-15">
+                    I want the bookings to continue until my event ends.
+                  </h4>
+                  <p>
+                    Disable this option if you want to end your booking from a
+                    specific date and time.
+                  </p>
+                </div>
+                <!-- End Toggle Button Style 1 -->
+              </div>
+            </div>
+
+            <div class="py-35 mx-20 border-b">
+              <div class="flex gap-10">
+                <!-- Toggle Button Style 1 -->
+                <label class="toggler-wrapper style-1">
+                  <input type="checkbox" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div>
+                  <h4 class="mb-15">
+                    I want my customers to pay the applicable service fees at
+                    the time when they make the bookings.
+                  </h4>
+                  <p>
+                    Passing your service charge means your attendees will pay
+                    your service charge in addition to the ticket price. Learn
+                    more
+                  </p>
+                </div>
+                <!-- End Toggle Button Style 1 -->
+              </div>
+            </div>
+
+            <div class="py-35 mx-20 border-b">
+              <div class="flex gap-10">
+                <!-- Toggle Button Style 1 -->
+                <label class="toggler-wrapper style-1">
+                  <input type="checkbox" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div>
+                  <h4 class="mb-15">
+                    I do not wish to offer my customers with option to cancel
+                    their orders and receive refund.
+                  </h4>
+                  <p>
+                    Disable this slider if you want to let your customers cancel
+                    their order and select a refund policy.
+                  </p>
+                </div>
+                <!-- End Toggle Button Style 1 -->
+              </div>
+            </div>
+
+            <div class="py-35 mx-20 border-b">
+              <div class="flex gap-10">
+                <!-- Toggle Button Style 1 -->
+                <label class="toggler-wrapper style-1">
+                  <input type="checkbox" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div>
+                  <h4 class="mb-15">
+                    I do not require adding any special instructions on the
+                    tickets.
+                  </h4>
+                  <p>
+                    Use this space to provide any last minute checklists your
+                    attendees must know in order to attend your event. Anything
+                    you provide here will be printed on your ticket.
+                  </p>
+                </div>
+                <!-- End Toggle Button Style 1 -->
+              </div>
+            </div>
+
+            <div class="py-35 mx-20 border-b">
+              <div class="flex gap-10">
+                <!-- Toggle Button Style 1 -->
+                <label class="toggler-wrapper style-1">
+                  <input type="checkbox" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div>
+                  <h4 class="mb-15">I do not want to add tags in my event</h4>
+                  <p>
+                    Use relevant words as your tags to improve the
+                    discoverability of your event. Learn more
+                  </p>
+                </div>
+                <!-- End Toggle Button Style 1 -->
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-40">
+            <div class="inline-block">
+              <a
+                href="#"
+                class="flex items-center gap-10 create-event py-10 px-50 rounded-xs text-white bg-primary transition bg-primary-hover"
+              >
+                <span>Previous</span>
+              </a>
+            </div>
+            <div class="inline-block">
+              <a
+                href="#"
+                class="flex items-center gap-10 create-event py-10 px-50 rounded-xs text-white bg-primary transition bg-primary-hover"
+              >
+                <span>Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- settings area end -->
+      </div>
+    </section>
+    <!--  event form end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area bg-footer text-white">
+      <div class="container">
+        <!-- footer top start -->
+        <div class="py-60 grid grid-cols-4 gap-30">
+          <div>
+            <h3 class="text-white text-lg font-regular mb-20">Company</h3>
+            <ul class="flex gap-15 flex-col">
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Faq</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-regular mb-20">Useful Links</h3>
+            <ul class="flex gap-15 flex-col">
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Create Event</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Sell Tickets Online</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-regular mb-20">Resources</h3>
+            <ul class="flex gap-15 flex-col">
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="text-white opacity-80 text-primary-hover" href="#"
+                  >Refer a Friend</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-info">
+            <h3 class="text-white text-lg font-regular mb-20">Follow Us</h3>
+            <ul class="flex items-center gap-10">
+              <li
+                class="h-40 w-40 rounded-full border-2 border-body flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  class="w-25 img-white opacity-50"
+                  src="/img/social-icons/facebook.png"
+                  alt="facebook"
+                />
+              </li>
+              <li
+                class="h-40 w-40 rounded-full border-2 border-body flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  class="w-25 img-white opacity-50"
+                  src="/img/social-icons/twitter.png"
+                  alt="twitter"
+                />
+              </li>
+              <li
+                class="h-40 w-40 rounded-full border-2 border-body flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  class="w-20 img-white opacity-50"
+                  src="/img/social-icons/instagram.png"
+                  alt="instagram"
+                />
+              </li>
+              <li
+                class="h-40 w-40 rounded-full border-2 border-body flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  class="w-25 img-white opacity-50"
+                  src="/img/social-icons/linkedin.png"
+                  alt="linkedin"
+                />
+              </li>
+              <li
+                class="h-40 w-40 rounded-full border-2 border-body flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  class="w-25 img-white opacity-50"
+                  src="/img/social-icons/youtube.png"
+                  alt="youtube"
+                />
+              </li>
+            </ul>
+
+            <div class="mt-40">
+              <h3 class="text-white text-lg font-regular mb-20">
+                Download Mobile App
+              </h3>
+              <div class="flex items-center gap-10">
+                <img
+                  class="w-150 cursor-pointer"
+                  src="/img/footer/app-store.png"
+                  alt="app store"
+                />
+                <img
+                  class="w-150 cursor-pointer"
+                  src="/img/footer/google-play.png"
+                  alt="google play"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer top end -->
+      </div>
+
+      <!-- footer bottom start -->
+      <div class="text-center py-30 border-t border-body">
+        <p class="opacity-70">
+          © 2022, <span class="font-semibold">Barren</span>. All rights
+          reserved. Powered by Gambolthemes
+        </p>
+      </div>
+      <!-- footer bottom end -->
+    </footer>
+    <!-- footer area end -->
+  </body>
+</html>
