@@ -119,3 +119,13 @@ body {
 .ticket-box {
   background-color: #f5edfc;
 }
+
+/* online-event-detail-view start  */
+.event-month,
+.event-date {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.event-public-button:hover {
+  background: #e8f7f7;
+}
